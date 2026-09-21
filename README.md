@@ -290,12 +290,14 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7: 
   Stop
 # Program:
-#include<stdio.h>
- #define R 4 #define C 4
+    #include<stdio.h>
+    #define R 4 #define C 4
 
-void spiralPrint(int m, int n, int a[R][C]){ int k = 0, l = 0, i;
+    void spiralPrint(int m, int n, int a[R][C])
+    {
+    int k = 0, l = 0, i;
 
-while(k < m && l < n){
+    while(k < m && l < n){
     for(i = l; i < n; i++)
         printf("%d ", a[k][i]);
     k++;
